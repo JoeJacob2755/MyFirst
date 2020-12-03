@@ -1,0 +1,14 @@
+num1 = int(input("Enter the first num: "))
+num2 = int(input("Enter the second Num: "))
+
+if num1 > num2:
+    smallNum = num2
+else:
+    smallNum = num1
+    
+for divisor in range(1,smallNum+1):
+    if (num1 % divisor == 0)and (num2 % divisor ==0 ):
+        HCF = divisor
+        
+print (HCF)
+    
